@@ -1,4 +1,39 @@
+### Sales Index
+GET http://localhost:3000/sales.json
 
+### Sales Create
+POST http://localhost:3000/sales.json
+Content-Type: application/json
+
+{
+"title": "test title",
+"description": "test description",
+"start_date": 04/23/22,
+"time": 14:00,
+"address": "test address",
+"picture": "test url",
+"end_date": 04/23/22
+}
+
+### Sales Show
+GET http://localhost:3000/sales/1.json
+
+### Sales Update
+PATCH http://localhost:3000/sales/1.json
+Content-Type: application/json
+
+{
+"title": "test title",
+"description": "test description",
+"start_date": 04/23/22,
+"time": 14:00,
+"address": "test address",
+"picture": "test url",
+"end_date": 04/23/22
+}
+
+### Sales Destroy
+DELETE http://localhost:3000/sales/1.json
 
 ### Users create (signup)
 POST http://localhost:3000/users
