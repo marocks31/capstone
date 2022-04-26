@@ -1,3 +1,5 @@
+@jwt = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTEwMTIyNDl9.Or6-_pH1CBttlMQR0nOfNtdoIz2IPCftfqyYHe1nVaI"
+
 ### Sales Index
 GET http://localhost:3000/sales.json
 
@@ -8,11 +10,11 @@ Content-Type: application/json
 {
 "title": "test title",
 "description": "test description",
-"start_date": 04/23/22,
-"time": 14:00,
+"start_date": '2001-02-03T04:05:06+07:00', '%Y-%m-%dT%H:%M:%S%z',
+"time": '2001-02-03T04:05:06+07:00', '%Y-%m-%dT%H:%M:%S%z',
 "address": "test address",
 "picture": "test url",
-"end_date": 04/23/22
+"end_date": '2001-02-03T04:05:06+07:00', '%Y-%m-%dT%H:%M:%S%z'
 }
 
 ### Sales Show
@@ -46,3 +48,10 @@ Content-Type: application/json
   "password": "password",
   "password_confirmation": "password"
 }
+
+### Sessions Create
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{"email": "test@test.com",
+"password": "password"}
