@@ -16,8 +16,11 @@ def create
     end_date: params[:end_date],
     end_time: params[:end_time]
   )
-  sale.save
+  if sale.save
   render json: sale.as_json
+  else 
+    render json: {error_messages:sale.errors.full_messages}, status: 422
+  end 
 end
 
 def show

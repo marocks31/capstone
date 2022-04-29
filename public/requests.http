@@ -15,25 +15,25 @@ Content-Type: application/json
 "address": "test address",
 "picture": "test url",
 "end_date": "2001-02-03",
-"end_time": "04:05:06",
+"end_time": "04:05:06"
 }
 
 ### Sales Show
 GET http://localhost:3000/sales/1.json
 
 ### Sales Update
-PATCH http://localhost:3000/sales/1.json
+PATCH http://localhost:3000/sales/5.json
 Content-Type: application/json
 
 {
-"title": "test title",
+"title": "HUGE garage sale",
 "description": "test description",
-"start_date": 04-23-22,
-"start_time": 07:00:00,
+"start_date": "04-23-22",
+"start_time": "07:00:00",
 "address": "test address",
 "picture": "test url",
-"end_date": 04-23-22,
-"end_time": 14:00:00,
+"end_date": "04-23-22",
+"end_time": "14:00:00"
 }
 
 ### Sales Destroy
