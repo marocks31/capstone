@@ -10,9 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_29_015155) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_29_022238) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "agendas", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "sale_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "sales", force: :cascade do |t|
     t.integer "user_id"
