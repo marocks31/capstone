@@ -1,4 +1,4 @@
-@jwt = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTEwMTIyNDl9.Or6-_pH1CBttlMQR0nOfNtdoIz2IPCftfqyYHe1nVaI"
+@jwt = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTEyODA5NDR9._ZUm3kbn3sh568Esr4r-8JqcrACmEhKPwj2K3JnvHh0"
 
 ### Sales Index
 GET http://localhost:3000/sales.json
@@ -10,11 +10,12 @@ Content-Type: application/json
 {
 "title": "test title",
 "description": "test description",
-"start_date": '2001-02-03T04:05:06+07:00', '%Y-%m-%dT%H:%M:%S%z',
-"time": '2001-02-03T04:05:06+07:00', '%Y-%m-%dT%H:%M:%S%z',
+"start_date": "2001-02-03",
+"start_time": "04:05:06",
 "address": "test address",
 "picture": "test url",
-"end_date": '2001-02-03T04:05:06+07:00', '%Y-%m-%dT%H:%M:%S%z'
+"end_date": "2001-02-03",
+"end_time": "04:05:06",
 }
 
 ### Sales Show
@@ -27,11 +28,12 @@ Content-Type: application/json
 {
 "title": "test title",
 "description": "test description",
-"start_date": 04/23/22,
-"time": 14:00,
+"start_date": 04-23-22,
+"start_time": 07:00:00,
 "address": "test address",
 "picture": "test url",
-"end_date": 04/23/22
+"end_date": 04-23-22,
+"end_time": 14:00:00,
 }
 
 ### Sales Destroy
