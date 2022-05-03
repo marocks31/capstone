@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
 
   post "/agendas" => "agendas#create"
+  get "/agendas" => "agendas#index"
   
 end
