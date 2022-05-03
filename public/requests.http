@@ -1,4 +1,4 @@
-@jwt = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTEyODA5NDR9._ZUm3kbn3sh568Esr4r-8JqcrACmEhKPwj2K3JnvHh0"
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE2OTA5NzV9.99gDLf4I5sDM1kkKcpOoCAtUVHAKHheqerHMJPvngOs
 
 ### Sales Index
 GET http://localhost:3000/sales.json
@@ -57,3 +57,15 @@ Content-Type: application/json
 
 {"email": "test@test.com",
 "password": "password"}
+
+### Agenda Create
+POST http://localhost:3000/agendas
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "sale_id": 2,
+  "status": "added"
+}
+
