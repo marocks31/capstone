@@ -1,4 +1,4 @@
 class Sale < ApplicationRecord
-  belongs_to :users
+  belongs_to :user
   has_many :agendas
 end

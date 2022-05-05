@@ -7,6 +7,7 @@ end
 
 def create
   sale = Sale.new(
+    user_id: current_user.id,
     title: params[:title],
     description: params[:description],
     start_date: params[:start_date],

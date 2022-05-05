@@ -1,5 +1,6 @@
 class Agenda < ApplicationRecord
 
-  belongs_to :users
-  has_many :sales
+  belongs_to :user
+  belongs_to :sale
+
 end

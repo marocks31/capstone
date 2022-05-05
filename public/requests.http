@@ -1,14 +1,15 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE2OTA5NzV9.99gDLf4I5sDM1kkKcpOoCAtUVHAKHheqerHMJPvngOs
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2NTE4MDgyMjB9.DkAJLfIQSisfUToz2vDpk4L-q3WFegM3wScWX5LIaXw
 
 ### Sales Index
 GET http://localhost:3000/sales.json
 
 ### Sales Create
 POST http://localhost:3000/sales.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-"title": "test title",
+"title": "Testing 1 2 3 ",
 "description": "test description",
 "start_date": "2001-02-03",
 "start_time": "04:05:06",
@@ -22,11 +23,12 @@ Content-Type: application/json
 GET http://localhost:3000/sales/1.json
 
 ### Sales Update
-PATCH http://localhost:3000/sales/5.json
+PATCH http://localhost:3000/sales/8.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-"title": "HUGE garage sale",
+"title": "Fancy Estate Sale",
 "description": "test description",
 "start_date": "04-23-22",
 "start_time": "07:00:00",
@@ -37,16 +39,16 @@ Content-Type: application/json
 }
 
 ### Sales Destroy
-DELETE http://localhost:3000/sales/1.json
+DELETE http://localhost:3000/sales/5.json
+Authorization: Bearer {{jwt}}
 
 ### Users create (signup)
 POST http://localhost:3000/users
-
 Content-Type: application/json
 
 {
-  "name": "April Powers",
-  "email": "test3@test.com",
+  "name": "Daniel Giggly",
+  "email": "test4@test.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -55,7 +57,7 @@ Content-Type: application/json
 POST http://localhost:3000/sessions
 Content-Type: application/json
 
-{"email": "test@test.com",
+{"email": "test4@test.com",
 "password": "password"}
 
 ### Agenda Create
@@ -64,8 +66,12 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "user_id": 1,
-  "sale_id": 2,
-  "status": "added"
+  "user_id": 2,
+  "sale_id": 3
+
 }
+
+### Agenda Index
+GET http://localhost:3000/agendas?id=1
+Authorization: Bearer {{jwt}}
 
