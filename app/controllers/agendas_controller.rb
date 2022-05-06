@@ -2,7 +2,7 @@ class AgendasController < ApplicationController
 
   def index
     agendas = current_user.agendas
-    render json: agendas.as_json
+    render json: agendas
    end 
 
   def create
