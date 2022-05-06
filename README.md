@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Introduction: 
 
-Things you may want to cover:
+## Technologies: 
+#### Rails version             7.0.2.3
+#### Ruby version              3.0.3
+#### RubyGems version          3.2.32
+#### Database adapter          postgresql
 
-* Ruby version
+Launch: 
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
