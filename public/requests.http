@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE2NTE4ODQ5NjV9.02Si-MQfxlqSxIaJNvkC36bg3isDx7xr-QnItyBJ-7E
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE2NTIxMDk1MTB9.0dAC2x1rXexFclAaHZeo5xtxaHMPkHOGI3L5c_rLSxE
 
 ### Sales Index
 GET http://localhost:3000/sales.json
