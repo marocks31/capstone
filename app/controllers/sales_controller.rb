@@ -12,7 +12,7 @@ def create
     picture = params["picture"]
   elsif(params["image_file"])
     #catch file upload and send to cloudinary
-    response = Cloudinary::Uploader.upload(["image_file"], resource_type: :auto)
+    response = Cloudinary::Uploader.upload(params["image_file"], resource_type: :auto)
     picture = response["secure_url"]
   else 
     picture = nil
