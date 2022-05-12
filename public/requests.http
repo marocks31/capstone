@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE2NTIxMDk1MTB9.0dAC2x1rXexFclAaHZeo5xtxaHMPkHOGI3L5c_rLSxE
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE2NTIyMjY2NTJ9.cXQy3xwNG1RHRtI_gJkuKBmMqrWhFdW_ja16lt_516I
 
 ### Sales Index
 GET http://localhost:3000/sales.json
@@ -9,7 +9,7 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-"title": "Test 3 ",
+"title": "Test 7e ",
 "description": "test description",
 "start_date": "2001-02-03",
 "start_time": "04:05:06",

@@ -6,6 +6,18 @@ def  index
 end 
 
 def create
+
+  if(params["picture"])
+    #use image url
+    picture = params["picture"]
+  elsif(params["image_file"])
+    #catch file upload and send to cloudinary
+    response = Cloudinary::Uploader.upload(["image_file"], resource_type: :auto)
+    picture = response["secure_url"]
+  else 
+    picture = nil
+  end 
+
   sale = Sale.new(
     user_id: current_user.id,
     title: params[:title],
@@ -13,7 +25,7 @@ def create
     start_date: params[:start_date],
     start_time: params[:start_time],
     address: params[:address],
-    picture: params[:picture],
+    picture: picture,
     end_date: params[:end_date],
     end_time: params[:end_time]
   )
